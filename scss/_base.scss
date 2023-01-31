@@ -1,0 +1,301 @@
+/**************************************
+    Base Style
+**************************************/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body,
+div,
+span,
+img,
+ol,
+ul,
+li,
+a,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+option,
+legend,
+label,
+table,
+th,
+td,
+tr,
+article,
+aside,
+caption,
+figure,
+footer,
+header,
+hgroup,
+mark,
+nav,
+section,
+time,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-size: 62.5%; /* font-size 1em = 10px on default browser settings */
+    overflow-y: scroll;
+}
+body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    color: $fullblack;
+    background: #dbebef;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font: 400 1.8rem/2.6rem $dm_sans;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-style: normal;
+    font-weight: 500;
+    color: $fullblack;
+}
+
+h1,
+.h1 {
+    font-size: clamp(4.5rem, 4.5vw, 6rem); // 45px to 60px
+    line-height: 1.4;
+}
+
+h2 {
+    font-size: clamp(3.5rem, 4.5vw, 5rem); // 35px to 50px
+    line-height: 1.3;
+}
+
+h3 {
+    font-size: clamp(3rem, 4.5vw, 3.5rem); // 30px to 35px
+    line-height: 1.3;
+}
+
+strong {
+    font-weight: 600;
+}
+
+p {
+    margin: 0 0 2.5rem;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.6rem;
+    line-height: 1.625;
+    color: #ffffff;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+.btn {
+    padding: 15px 30px;
+    font-weight: 600;
+    font-size: clamp(1.6rem, 3.5vw, 1.8rem); // 16px - 18px
+    line-height: 1.214285714285714;
+    text-align: center;
+    color: $white;
+    background: transparent;
+    border-radius: 100px;
+    border: 1px solid #fff;
+    position: relative;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    transform: perspective(1px) translateZ(0);
+    &.outline {
+        border: 1px solid #fff;
+        &::before {
+            border: #fff solid 1px;
+        }
+    }
+
+    &::before {
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        content: "";
+        position: absolute;
+        border-radius: 100px;
+        animation-duration: 1s;
+        border: #fff solid 1px;
+        -webkit-animation-duration: 1s;
+    }
+
+    &:hover,
+    &:focus {
+        color: #fff;
+        background-color: transparent;
+    }
+
+    &:hover:before,
+    &:focus:before,
+    &:active:before {
+        -webkit-animation-name: hvr-ripple-out;
+        animation-name: hvr-ripple-out;
+    }
+}
+ul {
+    list-style: none;
+}
+.media {
+    width: 100%;
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+section {
+    padding: 6rem 0;
+}
+
+.list-inline {
+    margin-left: -5px;
+    margin-right: -5px;
+
+    li {
+        padding-left: 5px;
+        padding-right: 5px;
+        display: inline-block;
+    }
+}
+
+.has_linebar {
+    padding-bottom: 13px;
+    position: relative;
+    &:before {
+        left: 0;
+        bottom: 0;
+        content: "";
+        width: 130px;
+        height: 6px;
+        max-width: 382px;
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+}
+.thin_linebar {
+    padding-bottom: 20px;
+    position: relative;
+    &:before {
+        left: 0;
+        bottom: 0;
+        content: "";
+        width: 174px;
+        height: 1px;
+        max-width: 382px;
+        position: absolute;
+        background-color: #c2a5f9;
+    }
+}
+/****************************************************
+    Form Style
+*****************************************************/
+form {
+    width: 100%;
+    label {
+        color: rgba(255, 255, 255, 0.7);
+        text-align: left;
+        display: inline-block;
+        margin-bottom: 5px;
+    }
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        width: 100%;
+        padding: 15px;
+        outline: none;
+        border: none;
+        margin-bottom: 15px;
+        border-radius: 8px;
+        font-size: 1.6rem;
+        background: rgba(255, 255, 255, 0.6);
+        color: #000;
+        &::placeholder {
+            /* Chrome, Firefox, Opera, Safari 10.1+ */
+            color: #fff;
+            opacity: 1; /* Firefox */
+            font-size: 1.6rem;
+        }
+
+        &:-ms-input-placeholder {
+            /* Internet Explorer 10-11 */
+            color: #fff;
+            font-size: 1.6rem;
+        }
+
+        &::-ms-input-placeholder {
+            /* Microsoft Edge */
+            color: #fff;
+            font-size: 1.6rem;
+        }
+    }
+    .btn {
+        border-color: rgba(255, 255, 255, 0.6);
+        &::before {
+            border-color: rgba(255, 255, 255, 0.6);
+        }
+    }
+}
+
+/****************************************************
+    Site's Layout
+*****************************************************/
+
+//container
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+}
+@media (min-width: 576px) {
+    .container {
+        width: 540px;
+    }
+}
+@media (min-width: 768px) {
+    .container {
+        width: 720px;
+    }
+}
+@media (min-width: 992px) {
+    .container {
+        width: 960px;
+    }
+}
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}

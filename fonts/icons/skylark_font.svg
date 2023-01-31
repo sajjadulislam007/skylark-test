@@ -1,0 +1,24 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg">
+<metadata>Copyright (C) 2023 by original authors @ fontello.com</metadata>
+<defs>
+<font id="skylark_font" horiz-adv-x="1000" >
+<font-face font-family="skylark_font" font-weight="400" font-stretch="normal" units-per-em="1000" ascent="850" descent="-150" />
+<missing-glyph horiz-adv-x="1000" />
+<glyph glyph-name="arrow_left_sm" unicode="&#xe800;" d="M425-113l-413 426c-4 3-7 8-9 13-2 6-3 12-3 17 0 6 1 12 3 17 2 6 5 11 9 14l413 425c1 1 3 2 5 3 1 0 3 0 4-1 2-1 3-2 4-4 1-2 1-4 1-5l0-104c0-6-2-12-6-16l-272-280 608 0c5 0 9-5 9-10v-77c0-6-4-10-9-10l-608 0 272-281c4-3 6-9 6-15v-104c0-9-8-13-14-8z" horiz-adv-x="778" />
+
+<glyph glyph-name="arrow_right_sm" unicode="&#xe801;" d="M353 799l413-425c4-4 7-8 9-14 2-5 3-11 3-17 0-6-1-11-3-17-2-5-5-10-9-14l-413-425c-2-1-3-2-5-2-1 0-3 0-4 1-2 1-3 2-4 4-1 1-2 3-2 5l0 104c0 6 3 11 6 15l273 281-608 0c-5 0-9 4-9 10l0 77c0 5 4 10 9 10l608 0-273 280c-3 4-6 10-6 16l0 104c0 8 9 13 15 7z" horiz-adv-x="778" />
+
+<glyph glyph-name="arrow_right_md" unicode="&#xe802;" d="M452 782l528-412c5-4 9-8 12-14 2-5 4-10 4-16 0-6-2-11-4-17-3-5-7-9-12-13l-528-412c-2-1-4-2-6-2-2-1-4 0-6 0-2 1-4 2-5 4-1 2-2 3-2 5l0 101c0 6 3 11 8 15l349 272-779 0c-6 0-11 4-11 10l0 74c0 6 5 10 11 10l779 0-349 272c-5 4-8 9-8 15l0 101c0 8 11 13 19 7z" horiz-adv-x="1000" />
+
+<glyph glyph-name="linkedin" unicode="&#xe803;" d="M984-144h-195v332c0 90-34 141-106 141-79 0-120-53-120-141v-332h-187v632h187v-85c0 0 57 104 191 104 134 0 230-82 230-251v-400z m-832 715c-64 0-116 52-116 116 0 65 52 117 116 117 64 0 115-52 115-117 0-64-51-116-115-116z m-97-715h195v632h-195v-632z" horiz-adv-x="1000" />
+
+<glyph glyph-name="arrow_right_lg" unicode="&#xe804;" d="M5 299h1036l-342-321 77-73 474 445-474 445-77-73 342-321h-1036v-102z" horiz-adv-x="1250" />
+
+<glyph glyph-name="arrow_left_xl" unicode="&#xe805;" d="M100 389c-22-21-22-57 0-78l353-354c22-22 57-22 79 0 21 22 21 57 0 79l-314 314 314 314c22 22 22 57 0 79-22 22-57 22-79 0l-353-354z m3238 17l-3199 0 0-112 3199 0 0 112z" horiz-adv-x="3444" />
+
+<glyph glyph-name="arrow_right_xl" unicode="&#xe806;" d="M3302 311c22 21 22 57 0 78l-353 354c-22 22-57 22-79 0-21-22-21-57 0-79l315-314-315-314c-21-22-21-57 0-79 22-22 57-22 79 0l353 354z m-3238-17h3199v112h-3199v-112z" horiz-adv-x="3333" />
+</font>
+</defs>
+</svg>

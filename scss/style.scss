@@ -1,0 +1,50 @@
+/*
+Assignment Name: Skylark Assignment Task
+Author: Md Sajjadul Islam
+Author URI: https://github.com/sajjadulislam007
+Version: 1.0.0
+Text Domain: skylark
+*/
+
+/***********************************
+Main STYLES
+***********************************/
+
+// COLORS
+$white: #ffffff;
+$fullblack: #000000;
+$lightblack: #393939;
+$gray: #353d45;
+
+// FONTS
+@font-face {
+    font-family: "interstate_bold", sans-serif;
+    src: url("../fonts/interstate/interstateBold.ttf") format("truetype"),
+        url("../fonts/interstate/interstateBold.otf") format("opentype");
+}
+@font-face {
+    font-family: "interstate_regular", sans-serif;
+    src: url("../fonts/interstate/interstateRegular.ttf") format("truetype"),
+        url("../fonts/interstate/Interstate-Regular-Font.ttf")
+            format("truetype");
+}
+@font-face {
+    font-family: "interstate_light", sans-serif;
+    src: url("../fonts/interstate/interstateLight.ttf") format("truetype"),
+        url("../fonts/interstate/interstateLight.otf") format("opentype");
+}
+
+$dm_sans: "DM Sans", sans-serif;
+$inter: "Inter", sans-serif;
+$syne: "Syne", sans-serif;
+$interstate_bold: "interstate_bold", sans-serif;
+$interstate_regular: "interstate_regular", sans-serif;
+$interstate_light: "interstate_light", sans-serif;
+
+//All Styles
+@import "./_icon_fonts";
+@import "./_base";
+@import "./_home";
+@import "./_responsive";
+@import "./_modal";
+@import "./_basic_animations";

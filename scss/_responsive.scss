@@ -1,0 +1,272 @@
+/*********************************
+Responsiveness
+**********************************/
+
+/*********************************
+Header Section Responsiveness
+**********************************/
+@media (max-width: 1199.98px) {
+    header {
+        .mega_menu {
+            grid-template-columns: 300px 350px 300px !important;
+            .nav_block {
+                &.start {
+                    padding: 40px 40px 40px 0;
+                }
+                &.center {
+                    padding: 40px;
+                }
+                &.end {
+                    padding: 40px 20px 40px 40px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 991.98px) {
+    header {
+        .mega_menu {
+            grid-template-columns: repeat(3, 1fr) !important;
+            .nav_block {
+                &.start {
+                    padding: 30px 30px 30px 0;
+                }
+                &.center {
+                    padding: 30px;
+                }
+                &.end {
+                    padding: 30px 20px 30px 30px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 767.98px) {
+    header {
+        .mega_menu {
+            grid-template-columns: repeat(1, 1fr) !important;
+            .nav_block {
+                &.start {
+                    padding: 30px;
+                    border-right: none;
+                    border-bottom: 1px solid #9f97ef;
+                }
+                &.center {
+                    padding: 30px;
+                    border-bottom: 1px solid #9f97ef;
+                }
+                &.end {
+                    padding: 30px;
+                    border-left: none;
+                }
+            }
+        }
+    }
+}
+
+/*********************************
+Banner Section Responsiveness
+**********************************/
+@media (max-width: 767.98px) {
+    .banner_section {
+        .content-wrapper {
+            max-width: 100%;
+        }
+        .tab-wrapper {
+            .tabs {
+                display: grid !important;
+                grid-template-columns: repeat(2, 1fr) !important;
+                grid-gap: 20px 30px !important;
+            }
+        }
+        .next_prev {
+            top: -60px !important;
+        }
+    }
+}
+@media (max-width: 575.98px) {
+    .banner_section {
+        .content-wrapper {
+            max-width: 100%;
+        }
+        .tab-wrapper {
+            .tabs {
+                grid-template-columns: repeat(1, 1fr) !important;
+                .tab-link {
+                    max-width: 100% !important;
+                }
+            }
+        }
+    }
+}
+
+/*************************************************************
+Design and developement Responsiveness (expertise section)
+**************************************************************/
+@media (max-width: 767.98px) {
+    .expertise_container {
+        .expertise_card {
+            padding: 30px;
+        }
+    }
+}
+
+/*********************************
+Transactions Section Responsiveness
+**********************************/
+@media (max-width: 991.98px) {
+    .transection_section {
+        .control_flow {
+            flex-wrap: wrap;
+            .control {
+                margin-right: 0;
+                margin-bottom: 20px;
+            }
+        }
+    }
+}
+
+@media (max-width: 575.98px) {
+    .transection_section {
+        .header_area {
+            flex-direction: column;
+            h3 {
+                margin-bottom: 30px;
+            }
+            .btn {
+                display: block;
+                width: 100%;
+            }
+        }
+    }
+}
+@media (max-width: 480.98px) {
+    .transection_section {
+        .transection_card {
+            max-width: 350px !important;
+        }
+    }
+}
+
+/*********************************
+Neque Tortor Section
+**********************************/
+@media (max-width: 1088.98px) {
+    .neque_content {
+        .media {
+            max-height: 450px;
+        }
+    }
+}
+@media (max-width: 767.98px) {
+    .neque_content {
+        .content {
+            padding: 40px 30px;
+        }
+        .media {
+            max-height: 450px;
+        }
+    }
+}
+@media (max-width: 575.98px) {
+    .neque_content {
+        .content {
+            .button_group {
+                width: 100%;
+                flex-direction: column;
+                .btn {
+                    margin-right: 0;
+                    display: block;
+                    width: 100%;
+                    margin-bottom: 20px;
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+/*********************************
+Footer Section
+**********************************/
+@media (max-width: 991.98px) {
+    //Footer top
+    .footer_top_content_wrapper {
+        .footer_nav {
+            flex-direction: column;
+            ul {
+                margin-right: 0;
+                margin-bottom: 30px;
+                padding: 0 20px;
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                grid-gap: 20px 0;
+            }
+        }
+    }
+}
+@media (max-width: 767.98px) {
+    //Footer bottom
+    .footer_bottom_content_wrapper {
+        .copyright_nav_social {
+            flex-direction: column;
+            .copyright {
+                margin-bottom: 20px;
+            }
+        }
+    }
+}
+
+@media (max-width: 575.98px) {
+    //Footer top
+    .footer_top_content_wrapper {
+        .footer_nav {
+            flex-direction: column;
+            ul {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-gap: 20px 0;
+                justify-items: center;
+            }
+        }
+    }
+    //Footer bottom
+    .footer_bottom_content_wrapper {
+        .copyright_nav_social {
+            .copyright {
+                flex-direction: column;
+                p {
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 480.98px) {
+    //Footer top
+    .footer_top_content_wrapper {
+        .footer_nav {
+            flex-direction: column;
+            ul {
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+                grid-gap: 20px 0;
+                justify-items: center;
+            }
+        }
+    }
+    //Footer bottom
+    .footer_bottom_content_wrapper {
+        .copyright_nav_social {
+            .copyright {
+                flex-direction: column;
+                ul {
+                    flex-direction: column;
+                }
+            }
+        }
+    }
+}
